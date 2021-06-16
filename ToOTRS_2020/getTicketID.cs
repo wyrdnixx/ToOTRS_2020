@@ -82,8 +82,8 @@ namespace TestOutlookAddIn
         {
             //string tmp = tbox_TicketID.Text;
 
-            // Emthällt der Betreff eine [#<TICKETNUMMER>] ?
-            Regex TicketIDinSubject = new Regex(@"(\[\#[0-9]{16}\])");
+            // Emthällt der Betreff eine [MCB#<TICKETNUMMER>] ?
+            Regex TicketIDinSubject = new Regex(@"(\[MCB\#[0-9]{16}\])");
 
             if (TicketIDinSubject.IsMatch(txtbox_Subject.Text))
             {
