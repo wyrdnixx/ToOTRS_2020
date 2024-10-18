@@ -31,10 +31,10 @@
     <IsWebBootstrapper>False</IsWebBootstrapper>
     <TargetFrameworkProfile />
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <PublishUrl>D:\MSVS\VS2019\ToOTRS_2020\ToOTRS_2020\Publish\</PublishUrl>
+    <PublishUrl>C:\Users\jojo\source\repos\ToOTRS_2020\ToOTRS_2020\Publish\</PublishUrl>
     <InstallUrl />
     <TargetCulture>de</TargetCulture>
-    <ApplicationVersion>1.0.0.7</ApplicationVersion>
+    <ApplicationVersion>1.0.0.8</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>7</UpdateInterval>
@@ -218,7 +218,6 @@
     <Compile Include="ToOTRS_2020.cs">
       <SubType>Code</SubType>
     </Compile>
-    <None Include="TestOutlookAddIn_TemporaryKey.pfx" />
     <None Include="ToOTRS_2020.Designer.xml">
       <DependentUpon>ToOTRS_2020.cs</DependentUpon>
     </None>
@@ -246,7 +245,7 @@
     </ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>CAE61A0A2992B9FA919CF58D971A1CA497F2C1A4</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>DA092CBB6FCFF8EF628FB704431EA8349572F157</ManifestCertificateThumbprint>
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

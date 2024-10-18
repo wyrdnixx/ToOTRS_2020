@@ -38,7 +38,9 @@ namespace TestOutlookAddIn
         }
 
 
-
+        /// <summary>
+        /// // v2.0.1.0 - Name entfenrt
+        /// </summary>
         private void processForm()
         {           
             
@@ -58,8 +60,8 @@ namespace TestOutlookAddIn
             
             if (_param.IsChecked == true)
             {
+                //*
                 string surname = getADSurname();
-
                 // MessageBox.Show("Surname: " + surname);
 
                 if (surname == null)
@@ -69,9 +71,15 @@ namespace TestOutlookAddIn
                 }
                 else
                 {
-                    _param.Subject = _param.Subject + " # ToOTRS: " + surname;
+                    
+                    //_param.Subject = _param.Subject + " # ToOTRS: " + surname;
+                
                     this.Close();
-                }                          
+                } 
+                // *
+
+                    _param.Subject = _param.Subject + " #ToOTRS: " ;
+
             }
             
         }

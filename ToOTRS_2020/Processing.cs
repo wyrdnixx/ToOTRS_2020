@@ -64,6 +64,8 @@ namespace TestOutlookAddIn
             if (_folderID != null)
             {
                 //                Outlook.MAPIFolder destFolder = (Outlook.MAPIFolder)this.Application.ActiveExplorer().Session.GetFolderFromID(_folderID);
+
+                // ToDo:  Try-Catch - ggf. folder-Reset
                 Outlook.MAPIFolder destFolder = (Outlook.MAPIFolder)toOtrs_2020.Application.ActiveExplorer().Session.GetFolderFromID(_folderID);
 
 
@@ -78,8 +80,9 @@ namespace TestOutlookAddIn
 
                     string MailTime = selectedMail.ReceivedTime.ToString();
 
-                    copyMail.Subject = Objparam.Subject + " - " + MailTime;
-
+                    copyMail.Subject = Objparam.Subject + MailTime;
+                    
+                    
                     // kopierte Mail verschieben.
                     try
                     {
